@@ -1,0 +1,387 @@
+:root{
+    --AzulOscuro: #010324;
+    --azul: #0066FF;
+    --blanco: white;
+    --gris:#01032496;
+    --gris2: #D9D9D9;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header ------------ Encabezado de la pagina-------*/
+
+header{
+    position: fixed;
+    padding: 10px;
+    width: 100%;
+    background-color: var(--gris);
+    border-bottom: 1px solid var(--AzulOscuro);
+    border-radius: .5em;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+header.scrolled {
+    background-color: var(--AzulOscuro); /* Cambia este color según tus preferencias */
+}
+
+header .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.head .title-logo{
+    display: flex;
+    align-items: center;
+}
+
+.title-logo img{
+    width: 3.2em;
+    height: 3em;
+}
+
+.title-logo h1{
+    font-weight: 300;
+    font-size: 1.2em;
+    color: var(--blanco);
+    margin-left: 10px;
+}
+
+.head .nav-bar ul{
+    display: flex;
+    gap: 4em;
+}
+
+.nav-bar ul li a{
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+.nav-bar .op:hover,.op1:hover,.op2:hover,.op3:hover{
+    border-bottom: 2px solid var(--azul) ;
+}
+
+
+.nav-bar .nav-button{
+    margin-left: 10em;
+    background: var(--azul);
+    padding: 5px 1em;
+    color: var(--blanco);
+    border-radius: .5em;
+}
+
+.abrirMenu, .cerrarMenu{
+    display: none;
+}
+
+/* ----MAIN------ Cuerpo de la pagina---------- */
+
+
+.present{
+    height: 37.5em;
+    background-image: url(../img/Rectangle\ 14.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.present h1{
+    font-weight: 200;
+    color: var(--blanco);
+    font-size: 2em;
+}
+
+.vimi{
+    height: 29em;
+    padding: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--gris2);
+}
+
+.vimi .parra{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.parra .vision , .mision{
+    width: 40%;
+    height: 50%;
+    text-align: center;
+}
+
+.parra .vision p{
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.parra .mision p{
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.objetivo{
+    width: 100%;
+    height: 31.25em;
+    display: flex;
+    justify-content: center;
+}
+
+.todo{
+    width: 1280px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.objetivo .parraob{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.objetivo .parraob .obje{
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.objetivo .parraob .obje h2{
+    font-weight: 100;
+    margin: 5px;
+}
+
+.objetivo .parraob .obje .active{
+    color: var(--button);
+}
+
+.objetivo .parraob .info{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 70%;
+}
+
+.objetivo .parraob .info p{
+    width: 60%;
+    font-size: 20px;
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    
+}
+
+.objetivo .img{
+    width: 40em;
+    height: 100%;
+    background-image: url(../img/273748875_3127181867506547_449646560703679268_n\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.objetivo .img1{
+    width: 40em;
+    height: 100%;
+    background-image: url(../img/Rectangle\ 25.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* responsive de portatil */
+
+@media only screen and ( max-width: 1024px ){
+    .nav-bar .nav-button{
+        margin-left: 4em;
+    }
+
+    .objetivo #parraob .info p{
+        width: 75%;
+    }
+}
+
+/* responsive de tableta */
+
+@media only screen and (max-width: 769px){
+
+    header .head {
+        justify-content: space-between;
+    }
+
+    .abrirMenu, .cerrarMenu{
+        background-color: transparent;
+        color: var(--blanco);
+        display: block;
+        border: 0;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .nav-bar{
+        width: 30%;
+        height: 100vh;
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 5rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: var(--AzulOscuro);
+        padding: 1.5rem;
+        box-shadow: 0 0 0 100vmax rgb(0, 0, 0, 0.35);
+    }
+
+    .nav-bar.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+    .head .nav-bar ul{
+        flex-direction: column;
+        align-items: end;
+        gap: 2em;
+    }
+
+    .nav-bar ul li a{
+        color: var(--blanco);
+    }
+    
+    .nav-bar .nav-button{
+        margin-left: 0px;
+        background: transparent;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .present{
+        height: 25em;
+    }
+
+    .present h1{
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .vimi{
+        height: auto;
+        padding: 2em;
+    }
+
+    .vimi .parra{
+        height: 20em;
+    }
+
+    .parra .vision, .mision{
+        height: 60%;
+    }
+
+    .todo{
+        justify-content: space-between;
+    }
+
+    .objetivo .parraob{
+        width: 40%;
+        height: 60%;
+    }
+
+    .objetivo #parraob{
+        height: 90%;
+    }
+
+    .objetivo .parraob .obje h2{
+        font-size: 1.2em;
+    }
+
+    .objetivo .parraob .info p{
+        width: 80%;
+        font-size: 1em;
+    }
+    .objetivo .img{
+        width: 25em;
+    }
+
+    .objetivo .img1{
+        width: 25em;
+    }
+
+
+}
+
+/* Responsive de movile */
+
+@media only screen and ( max-width: 426px){
+    .title-logo {
+        width: 85%;
+    }
+
+    .nav-bar{
+        width: 50%;
+    }
+
+    .present{
+        height: 18em;
+    }
+
+    .present h1{
+        text-align: center;
+        font-size: 1em;
+    }
+
+    .vimi{
+        height: auto;
+        padding: 1.5em;
+    }
+
+    .vimi .parra{
+        flex-direction: column;
+        justify-content: space-between;
+        height: 30em;
+    }
+
+    .parra .vision, .mision{
+        width: 80%;
+        height: 45%;
+    }
+
+    .todo{
+        justify-content: center;
+    }
+
+    .objetivo .parraob{
+        width: 90%;
+    }
+
+    .objetivo .parraob .obje h2{
+        font-size: 1.1em;
+    }
+
+    .objetivo .parraob .info p{
+        width: 80%;
+        font-size: 1em;
+    }
+    .objetivo .img{
+        display: none;
+    }
+
+    .objetivo .img1{
+        display: none;
+    }
+
+}

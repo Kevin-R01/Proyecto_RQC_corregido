@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d42fb48da4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../../static/css/styleGrades.css">
+    <link rel="ICON" href="../../../static/img/logonaciones.png">
+    <title>Colegio Naciones Unidas I.E.D - Notas</title>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="title-logo">
+                <img src="../../../static/img/logonaciones.png" alt="Logo-Empresa">
+                <h1 class="title">Colegio Naciones Unidas I.E.D</h1>
+            </div>
+            
+            <button id="abrir" class="abrirMenu"><i class="fa-solid fa-bars"></i></button>
+            <nav id="menu" class="nav-bar">
+                <button id="cerrar" class="cerrarMenu"><i class="fa-solid fa-x"></i></button>
+                <ul class="nav">
+                    <li><a href="indexTeacher.html" class="op">Inicio</a></li>
+                    <li><a href="attendance.html" class="op1">Asistencia</a></li>
+                    <li><a href="schedule.html" class="op2">Cronograma</a></li>
+                    <li><a href="grades.html" class="op3">Notas</a></li>
+
+                    <li class="menu-item">Mi cuenta<i class="fa-solid fa-user"></i>
+                        <ul class="sub-menu">
+                            <li><a href="profile.html">Mi Perfil</a></li>
+                            <li><a href="">Cerrar <i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+                        </ul>
+                    </li>
+
+                    <li class="obse"><a href="profile.html">Mi Perfil</a></li>
+                    <li id="obse" class="obse"><a href="#">Salir <i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="title-img">
+            <h1>Notas</h1>
+        </div>
+
+        <div id="calificaciones">
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Materia</th>
+                        <th>Calificación</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                </tbody>
+            </table>
+        </div>
+
+        <div id="crearNotas">
+            <h2>Crear Notas</h2>
+            <form id="formularioNotas">
+                <label for="materia">Materia:</label>
+                <input type="text" id="materia" name="materia" required>
+
+                <label for="calificacion">Calificación:</label>
+                <input type="number" id="calificacion" name="calificacion" required>
+
+                <button type="button" onclick="agregarNota()">Agregar Nota</button>
+            </form>
+        </div>
+    </main>
+
+    <script>
+        // Datos simulados de calificaciones
+        let calificacionesSimuladas = [
+            { materia: 'Matemáticas', calificacion: 90 },
+            { materia: 'Historia', calificacion: 85 },
+            // ... más calificaciones simuladas ...
+        ];
+
+        // En el evento de carga de la página o cualquier otro evento relevante
+        document.addEventListener('DOMContentLoaded', function () {
+            // Mostrar las calificaciones simuladas
+            mostrarCalificaciones(calificacionesSimuladas);
+        });
+
+        function mostrarCalificaciones(calificaciones) {
+            const contenedorCalificaciones = document.querySelector('#calificaciones tbody');
+
+            contenedorCalificaciones.innerHTML = calificaciones.map(calificacion => `
+                <tr>
+                    <td>${calificacion.materia}</td>
+                    <td>${calificacion.calificacion}</td>
+                </tr>
+            `).join('');
+        }
+
+        function agregarNota() {
+            const materia = document.getElementById('materia').value;
+            const calificacion = parseInt(document.getElementById('calificacion').value, 10);
+
+            // Validar que la calificación sea un número
+            if (isNaN(calificacion)) {
+                alert('La calificación debe ser un número');
+                return;
+            }
+
+            // Agregar la nueva nota al array de calificaciones
+            calificacionesSimuladas.push({ materia, calificacion });
+
+            // Mostrar las calificaciones actualizadas
+            mostrarCalificaciones(calificacionesSimuladas);
+
+            // Limpiar el formulario
+            document.getElementById('formularioNotas').reset();
+        }
+    </script>
+</body>
+</html>

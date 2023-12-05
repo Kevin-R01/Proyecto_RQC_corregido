@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d42fb48da4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../../static/css/styleIndexStu.css">
+    <link rel="ICON" href="../../../static/img/logonaciones.png">
+    <title>Colegio Naciones Unidas</title>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="title-logo">
+                <img src="../../../static/img/logonaciones.png" alt="Logo-Empresa">
+                <h1 class="title">Colegio Naciones Unidas I.E.D</h1>
+            </div>
+
+            <button id="abrir" class="abrirMenu"><i class="fa-solid fa-bars"></i></button>
+            <nav id="menu" class="nav-bar">
+                <button id="cerrar" class="cerrarMenu"><i class="fa-solid fa-x"></i></button>
+                <ul class="nav">
+                    <li><a href="IndexStudent.html" class="op">Inicio</a></li>
+                    <li><a href="StudentShe.html" class="op2">Cronograma</a></li>
+                    <li><a href="StudentGrades.html" class="op3">Mis Notas</a></li>
+
+                    <li class="menu-item">Mi cuenta<i class="fa-solid fa-user"></i>
+                        <ul class="sub-menu">
+                            <li id="abrirModal">Mi Perfil</a></li>
+                            <li><a href="">Cerrar <i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+                        </ul>
+                    </li>
+
+                    <li id="abrirModal" class="obse">Mi Perfil</li>
+                    <li id="obse" class="obse"><a href="#">Salir <i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="modal" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar">&times;</span>
+            <h2>Mi Perfil</h2>
+            <form action="">
+                <h4 class="title">Informacion para Actualizar</h4>
+                <div class="info1">
+                    <div class="segun">
+                        <h4>Primer Nombre</h4>
+                        <input type="text" name="primer nombre" placeholder="Primer Nombre">
+                    </div>
+
+                    <div class="segun">
+                        <h4>Segundo Nombre</h4>
+                        <input type="text" name="segundo nombre" placeholder="Segundo Nombre">
+                    </div>
+
+                    <div class="segun">
+                        <h4>Primer Apellido</h4>
+                        <input type="text" name="primer apellido" placeholder="Primer Apellido">
+                    </div>
+
+                    <div class="segun">
+                        <h4>Segundo Apellido</h4>
+                        <input type="text" name="segundo apellido" placeholder="Segundo Apellido">
+                    </div>
+
+                    <div class="segun">
+                        <h4>Genero</h4>
+                        <input type="text" name="genero" placeholder="Genero">
+                    </div>
+
+                    <div class="segun">
+                        <h4>Depto. de Nacimiento</h4>
+                        <input type="text" name="nacimiento" placeholder="Depto. de Nacimiento">
+                    </div>
+
+                    <div class="segun">
+                        <h4>Municipio de Nacimiento</h4>
+                        <input type="text" name="municipioNaci" placeholder="Municipio de Nacimiento">
+                    </div>
+
+                    <div class="segun">
+                        <h4>Fecha de Nacimiento</h4>
+                        <input type="date" name="FechaNaci">
+                    </div>
+
+                    <div class="segun">
+                        <h4>Edad</h4>
+                        <input type="number" name="edad" placeholder="Edad">
+                    </div>
+
+                    <div class="segun">
+                        <h4>Tipo de documento</h4>
+                        <input type="text" name="Seleccionar" placeholder="Seleccionar">
+                    </div>
+
+                    <div class="segun">
+                        <h4>Numero documento</h4>
+                        <input type="number" name="numberDocu" placeholder="Numero de documento">
+                    </div>
+
+                    <div class="segun">
+                        <h4>Localidad</h4>
+                        <input type="text" name="Localidad" placeholder="Seleccionar">
+                    </div>
+
+                    <div class="segun">
+                        <h4>Barrio</h4>
+                        <input type="text" name="barrio" placeholder="Barrio">
+                    </div>
+
+                    <div class="segun">
+                        <h4>Estrato</h4>
+                        <input type="number" name="estrato" placeholder="Estrato">
+                    </div>
+
+                    <div class="segun">
+                        <h4>Direccion Residencia</h4>
+                        <input type="text" name="direccion" placeholder="Direccion Residencia">
+                    </div>
+
+                    <div class="segun">
+                        <h4>Numero Fijo</h4>
+                        <input type="number" name="numeroF" placeholder="Numero Fijo">
+                    </div>
+
+                    <div class="segun">
+                        <h4>Numero Celular</h4>
+                        <input type="number" name="numeroC" placeholder="Numero Celular">
+                    </div>
+
+                    <div class="segun">
+                        <h4>Correo Electronico</h4>
+                        <input type="text" name="Correo" placeholder="Correo Electronico">
+                    </div>
+
+                    <div class="segun">
+                        <h4>Contraseña</h4>
+                        <input type="text" name="contra" placeholder="Contraseña Predeterminada">
+                    </div>
+
+                    <div class="segun">
+                        <h4>Confirmar Contraseña</h4>
+                        <input type="text" name="contra" placeholder="Contraseña Predeterminada">
+                    </div>
+                </div>
+    
+                <div class="buttom">
+                    <button>Actualizar Docente</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <main>
+        <div class="present">
+            <h1>
+                Bienvenido Jaider Quimbaya
+            </h1>
+        </div>
+
+        <div class="cronograma">
+            <h1 class="cronoEsta">
+                Cronograma de esta semana
+            </h1>
+
+            <div class="crono">
+                <div class="header">
+                    <h1>
+                        Agosto 2023
+                    </h1>
+                </div>
+
+                <div class="semana">
+                    <div class="lm">
+                        <h2 class="ti">
+                            Lunes
+                        </h2>
+                        <div class="mensaje">
+                            <p>Clases de Matemáticas</p>
+                            <p>Deportes en la cancha principal</p>
+                        </div>
+                    </div>
+
+                    <div class="lm">
+                        <h2 class="ti">
+                            Martes
+                        </h2>
+                        <div class="mensaje">
+                            <p>Reunión de Estudiantes</p>
+    <p>Clases de Ciencias Naturales</p>
+                        </div>
+                    </div>
+
+                    <div class="lm">
+                        <h2 class="ti">
+                            Miercoles
+                        </h2>
+                        <div class="mensaje">
+                            <p>Actividades culturales: Teatro</p>
+    <p>Clases de Historia</p>
+                        </div>
+                    </div>
+
+                    <div class="lm">
+                        <h2 class="ti">
+                            Jueves
+                        </h2>
+                        <div class="mensaje">
+                            <p>Prácticas de Laboratorio</p>
+                            <p>Clases de Idiomas</p>
+                        </div>
+                    </div>
+
+                    <div class="lm">
+                        <h2 class="ti">
+                            Viernes
+                        </h2>
+                        <div class="mensaje">
+                            <p>Evento deportivo: Torneo de Fútbol</p>
+    <p>Clases de Literatura</p>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+            </div>
+            
+        </div>
+
+        <div class="motto">
+            <h1 class="mot">Educacion, Ciencia, Cultura y deporte para trascender</h1>
+            <h1 class="family">SOMOS FAMILIA NACIONES UNIDAS</h1>
+            <p class="copy">@2023 RQC_EDUCATIONAL INFORMATION</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="conte">
+                <div class="comunidad">
+                    <h2>
+                        Sobre nosotros
+                    </h2>
+    
+                    <hr>
+    
+                    <ul>
+                        <li>
+                            Horizonte institucional
+                        </li>
+    
+                        <li>
+                            Ubicacion
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="comunidad" id="comunidad">
+                    <h2>
+                        Comunidad
+                    </h2>
+    
+                    <hr>
+    
+                    <ul>
+                        <li>
+                            Estudiantes 
+                        </li>
+    
+                        <li>
+                            Docentes
+                        </li>
+    
+                        <li>
+                            Talleres preparativos
+                        </li>
+    
+                        <li>
+                            Rendicion de cuentas
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="comunidad" >
+                    <h2>
+                        Contactanos
+                    </h2>
+    
+                    <hr>
+    
+                    <p class="loca">Localidad:</p>
+                    <p class="des">10 - Engativa</p>
+    
+                    <p class="loca">Sede A:</p>
+                    <p class="des">Dirección: CL 73 BIS 68 G - 27</p>
+                    <p class="des">Telefono: 2502506</p>
+    
+                    <p class="loca">Sede B:</p>
+                    <p class="des">Dirección: Cl. 73A #69j-10</p>
+                    <p class="des">Teléfono: 12507823</p>
+                </div> 
+            </div>
+            
+            <hr class="linea">
+            <p class="dere">
+                Todos los derechos reservados © 2023 RQC  EDUCATIONAL INFORMATION 
+            </p>
+        </div>
+    </footer>
+
+    <script src="../../../static/js/Script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get events from localStorage
+            let eventsArr = getEvents();
+    
+            // Select the container where events will be displayed
+            const eventsContainer = document.querySelector(".semana");
+    
+            // Loop through each event and create elements to display them
+            eventsArr.forEach(event => {
+                const dayElement = document.createElement("div");
+                dayElement.classList.add("lm");
+    
+                const titleElement = document.createElement("h2");
+                titleElement.classList.add("ti");
+                titleElement.textContent = event.day;
+    
+                const messageElement = document.createElement("div");
+                messageElement.classList.add("mensaje");
+                
+                // Loop through each message in the event
+                event.messages.forEach(message => {
+                    const messageParagraph = document.createElement("p");
+                    messageParagraph.textContent = message;
+                    messageElement.appendChild(messageParagraph);
+                });
+    
+                dayElement.appendChild(titleElement);
+                dayElement.appendChild(messageElement);
+    
+                // Append the dayElement to the eventsContainer
+                eventsContainer.appendChild(dayElement);
+            });
+        });
+    </script>
+    
+</body>
+</html>

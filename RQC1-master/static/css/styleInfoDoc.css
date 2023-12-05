@@ -1,0 +1,641 @@
+:root{
+    --header: #010324;
+    --blanco: #ffff;
+    --button:#0066FF;
+    --gris: #7b7b7b;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+}
+
+/* Header */
+
+header{
+    width: 25%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--header);
+}
+
+header .head{
+    width: 80%;
+    height: 90%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.title-logo{
+    height: 3em;
+    display: flex;
+    align-items: center;
+}
+
+ .title-logo .logo{
+    width: 4em;
+    height: 100%;
+}
+
+.title-logo .logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.title-logo .title{
+    width: 100%;
+    height: 100%;
+    padding: 0px 5px 0px 5px;
+    color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title-logo .title p{
+    font-size: 1.2em;
+}
+
+.hamburger{
+    display: none;
+}
+
+.name{
+    width: 95%;
+    color: var(--blanco);
+}
+
+.name .nombre{
+    font-size: 1.2em;
+}
+
+.nav-bar {
+    width: 95%;
+    height: 55%;
+    font-size: 1.2em;
+}
+
+.nav-bar .op{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav-bar ul {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.nav-bar a{
+    color: var(--blanco);
+}
+
+.button a{
+    color: var(--blanco);
+}
+
+
+/* main */
+
+main{
+    width:75%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.per{
+    width: 20%;
+    display: flex;
+    justify-content: end;
+}
+
+.per .perfin{
+    width: 100%;
+    height: 45%;
+    border: 1px solid var(--gris);
+    border-radius: 11px;
+}
+
+.per .perfin .fot{
+    width: 100%;
+    height: 60%;
+    border-radius: 11px 11px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--header);
+}
+
+.per .perfin .fot img{
+    width: 68%;
+    border-radius: 11px;
+}
+
+.per .perfin .name-list{
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.per .perfin .name-list .name{
+    color: var(--header);
+    text-align: center;
+}
+
+.per .perfin .name-list .list{
+    width: 85%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.per .perfin .name-list .list a{
+    color: var(--header);
+    width: 75%;
+    display: flex;
+    align-items: center;
+}
+
+.per .perfin .name-list .list a i{
+    font-size: 0.8em;
+    margin: 0px 10px 0px 0px;
+}
+
+.conte{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.conte .infor{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.conte .infor .title{
+    height: 10%;
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 0px 20px;
+    background: var(--header);
+    color: var(--blanco);
+}
+
+.conte form{
+    width: 100%;
+    border: 1px solid var(--gris);
+    height: 89%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+form .info1{
+    width: 95%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+form .info1 h4{
+    font-weight: 600;
+}
+
+form .info1 input{
+    height: 2em;
+    border: 1px solid var(--gris);
+    border-radius: 5px;
+}
+
+form .segun{
+    width: 9.688em;
+    height: 3.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+form .segun1{
+    width: 13em;
+    height: 3.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+form .info1 .segun2{
+    width: 9em;
+    height: 3.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+form .info1 .segun3{
+    width: 3.375em;
+    height: 3.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+form .info1 .segun4{
+    width: 9.688em;
+    height: 3.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+form .info1 .segun5{
+    width: 7.313em;
+    height: 3.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.conte .buttom{
+    display: flex;
+    width: 95%;
+    justify-content: end;
+}
+
+form button{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    background: var(--button);
+    border: 0;
+    border-radius: 8px;
+    color: var(--blanco);
+}
+
+.conte .course{
+    width: 100%;
+    height: 39%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.conte .course .title{
+    height: 15%;
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 0px 20px;
+    background: var(--header);
+    color: var(--blanco);
+}
+
+.conte .course .te{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conte .course .te .dosD{
+    width: 95%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.conte .course .te .dosD .curso{
+    width: 19.063em;
+    height: 4.938em;
+    display: flex;
+    border: 1px solid var(--header);
+    border-radius: 1em;
+    background: var(--header);
+}
+
+.course .te .dosD .curso h3{
+    font-weight: 100;
+}
+
+.course .te .dosD .curso h4{
+    font-weight: 100;
+}
+
+.course .te .dosD .curso .fot{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1em 0px 0px 1em;
+    background: var(--header);
+    color: var(--blanco);
+}
+
+.course .te .dosD .curso .infor{
+    width: 60%;
+    height: 100%;
+    padding: 0px 0px 0px 10px;
+    background: var(--blanco);
+}
+
+.course .te .dosD .curso .to{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 1em 1em 0px;
+    background: var(--header);
+    color: var(--blanco);
+}
+
+
+
+/* responsive de portatil L */
+
+@media only screen and ( min-width: 1440px){
+    .conten{
+        justify-content: space-around;
+    }
+
+}
+
+/* responsive de portatil */
+
+@media only screen and ( max-width: 1024px){
+    header{
+        height: auto;
+    }
+
+    main{
+        height: 60em;
+    }
+    .semana{
+        height: 17em;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* responsive de tableta */
+
+@media only screen and ( max-width: 768px){
+
+    body{
+        flex-direction: column;
+    }
+
+    header{
+        width: 100%;
+        padding: 0.7em 0px;
+        height: 3.4em;
+    }
+
+    header .head{
+        width: 90%;
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+    }
+
+    .name{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger .line{
+        width: 30px;
+        height: 3px;
+        background: var(--blanco);
+        margin: 6px 0;
+    }
+
+    .nav-bar{
+        height: 0;
+        position: absolute;
+        top: 4em;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background: var(--header);
+        transition: 0.5s;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-bar.active{
+        height: 15em;
+    }
+
+    .nav-bar ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar ul .op{
+        flex-direction: column;
+        justify-content: space-around;
+
+        height: 60%;
+    }
+    .nav-bar.active ul{
+        width: 90%;
+        opacity: 1;
+    }
+
+    /* Main */
+
+    main{
+        width: 100%;
+        height: 70em;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .per{
+        width: 25%;
+        height: 20em;
+    }
+
+    .per .perfin{
+        height: 100%;
+    }
+
+    .per .perfin .name-list .name{
+        display: block;
+    }
+
+    main .conte{
+        width: 95%;
+        height: 65%;
+    }
+    /* footer */
+
+    footer{
+        height: 18.4em;
+        background: var(--header);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer {
+    
+        width: 75em;
+        height: 90%;
+    }
+    
+    .conte{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    
+    .comunidad{
+        width: 19.25em;
+        color: var(--blanco);
+    }
+    
+    .comunidad h2{
+        font-size: 1.3em;
+        font-weight: 100;
+    }
+    
+    .comunidad hr{
+        margin-top: 5px;
+    }
+    
+    .comunidad ul{
+        margin: 1em;
+    }
+    
+    .comunidad ul li{
+        list-style: inside;
+        margin-top: 10px;
+    }
+    
+    .comunidad .loca{
+        margin: 1em 1em 0;
+    }
+    
+    .comunidad .des{
+        margin: 0 2em 0;
+    }
+    
+    .footer .linea{
+        margin-top: 1em;
+    }
+    
+    .dere {
+        color: var(--blanco);
+        text-align: center;
+    }
+    #comunidad{
+        display: none;
+    }
+
+    .conte{
+        justify-content: space-around;
+    }
+
+    #comunidad{
+        display: none;
+    }
+
+}
+
+/* Responsive de movile */
+
+@media only screen and ( max-width: 426px){
+
+    main{
+        height: 120em;
+    }
+
+    main .conte{
+        height: 80%;
+    }
+    .per{
+        width: 50%;
+        height: 19em;
+    }
+
+    .per .perfin{
+        height: 100%;
+    }
+
+    .per .perfin .name-list .name{
+        display: block;
+    }
+
+    .conte .infor .title{
+        height: 5%;
+    }
+
+    .conte form{
+        height: 95%;
+    }
+
+    form .info1{
+        justify-content: space-around;
+    }
+    form .segun{
+        width: 8.5em;
+    }
+
+    form .info1{
+        flex-wrap: wrap;
+    }
+
+    .conte .course .title{
+        height: 8%;
+    }
+
+    footer{
+        height: 27em;
+    }
+
+    .conte{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #comunidad{
+        display: none;
+    }
+}

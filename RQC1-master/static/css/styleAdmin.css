@@ -1,0 +1,652 @@
+:root{
+    --header: #010324;
+    --blanco: #ffff;
+    --button:#0066FF;
+    --gris: #7b7b7b;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+}
+
+/* Header */
+
+header{
+    width: 25%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--header);
+}
+
+header .head{
+    width: 80%;
+    height: 90%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.title-logo{
+    height: 3em;
+    display: flex;
+    align-items: center;
+}
+
+ .title-logo .logo{
+    width: 4em;
+    height: 100%;
+}
+
+.title-logo .logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.title-logo .title{
+    width: 100%;
+    height: 100%;
+    padding: 0px 5px 0px 5px;
+    color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title-logo .title p{
+    font-size: 1.2em;
+}
+
+.hamburger{
+    display: none;
+}
+
+.name{
+    width: 95%;
+    color: var(--blanco);
+}
+
+.name .nombre{
+    font-size: 1.2em;
+}
+
+.nav-bar {
+    width: 95%;
+    height: 55%;
+    font-size: 1.2em;
+}
+
+.nav-bar .op{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav-bar ul {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.nav-bar a{
+    color: var(--blanco);
+}
+
+.button a{
+    color: var(--blanco);
+}
+
+/* main */
+
+main{
+    width: 75%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+main h2{
+    font-weight: 100;
+}
+
+.conten{
+    height: 51%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.conten .desa{
+    display: flex;
+    justify-content: space-around;
+    height: 40%;
+}
+
+.desa .card{
+    display: flex;
+    width: 22.938em;
+    height: 8.25em;
+    border-radius:  1em;
+    border: 1px solid var(--header);
+}
+
+.card .estu{
+    width: 60%;
+    height: 100%;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.estu h1{
+    font-weight: 100;
+    margin: 10px;
+}
+
+.card .icon{
+    width: 40%;
+    display: flex;
+    font-size: 3em;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .text{
+    display: flex;
+    align-items: center;
+    display: flex;
+}
+
+.card a{
+    color: var(--header);
+}  
+
+/* cronograma */
+
+.crono{
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.crono .header{
+    width: 100%;
+    height: 2.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .op{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 0px 10px;
+    justify-content: space-between;
+}
+
+.semana .per{
+    width: 80%;
+    display: flex;
+} 
+
+.op .mo{
+    width: 55%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mo i{
+    font-size: 20px;
+}
+
+.mo .izq{
+    width: 2.188em;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px 0px 0px 8px;
+    background: var(--header);
+    color: var(--blanco);
+}
+
+.mo #dere{
+    border-radius: 0px 8px 8px 0px;
+}
+
+.hoy{
+    padding: 6px 7px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: var(--header);
+}
+
+.hoy {
+    color: var(--blanco);
+    font-size: 1.2em;
+}
+
+.mes h1{
+    font-weight: 100;
+}
+
+.msd{
+    width: 20%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.msd h3{
+    font-weight: 100;
+}
+
+.msd .mes{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px 0px 0px 8px;
+    background: var(--header);
+    color: var(--blanco);
+}
+
+.msd .sema{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--header);
+    color: var(--blanco);
+}
+
+.msd .dia{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 8px 8px 0px;
+    background: var(--header);
+    color: var(--blanco);
+}
+
+.crono .linea{
+    width: 100%;
+    height: 2px;
+    background: var(--header);
+}
+
+.semana{
+    display: flex;
+    justify-content: center;
+}
+
+.semana .lm{
+    display: flex;
+}
+
+.semana .lunes{
+    width: 10.625em;
+    height: 8.313em;
+    border: 1px solid var(--gris);
+}
+
+.lunes h2{
+    height: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 100;
+    color: var(--blanco);
+    background:var(--header);
+}
+
+
+/* ---footer---- */
+
+footer{
+    display: none;
+}
+
+/* responsive de portatil L */
+
+@media only screen and ( min-width: 1440px){
+    .conten{
+        justify-content: space-around;
+    }
+
+}
+
+/* responsive de portatil */
+
+@media only screen and ( max-width: 1024px){
+    header{
+        height: auto;
+    }
+
+    main{
+        height: 60em;
+    }
+    .semana{
+        height: 17em;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* responsive de tableta */
+
+@media only screen and ( max-width: 768px){
+
+    body{
+        flex-direction: column;
+    }
+
+    header{
+        width: 100%;
+        padding: 0.7em 0px;
+        height: 3.4em;
+    }
+
+    header .head{
+        width: 90%;
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+    }
+
+    .name{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger .line{
+        width: 30px;
+        height: 3px;
+        background: var(--blanco);
+        margin: 6px 0;
+    }
+
+    .nav-bar{
+        height: 0;
+        position: absolute;
+        top: 4em;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background: var(--header);
+        transition: 0.5s;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-bar.active{
+        height: 15em;
+    }
+
+    .nav-bar ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar ul .op{
+        flex-direction: column;
+        justify-content: space-around;
+
+        height: 60%;
+    }
+    .nav-bar.active ul{
+        width: 90%;
+        opacity: 1;
+    }
+
+    main{
+        width: 100%;
+        height: 60em;
+        padding: 0;
+        align-items: center;
+    }
+
+    main .conten{
+        width: 90%;
+        height: 30em;
+    }
+
+    .conten .desa{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 50%;
+    }
+
+    .desa .card{
+        width: 60%;
+        height: 40%;
+    }
+
+    .header .op{
+        width: 20%;
+    }
+
+    .crono{
+        width: 90%;
+        height: 24em;
+    }
+
+    .semana {
+        width: 100%;
+        height: 17em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .semana .per{
+        display: flex;
+    }
+
+    .semana .lm{
+        width: 100%;
+    }
+
+    .semana #viernes{
+        width: 10.7em;
+    }
+    
+    /* footer */
+
+    footer{
+        height: 18.4em;
+        background: var(--header);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer {
+    
+        width: 75em;
+        height: 90%;
+    }
+    
+    .conte{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    
+    .comunidad{
+        width: 19.25em;
+        color: var(--blanco);
+    }
+    
+    .comunidad h2{
+        font-size: 1.3em;
+        font-weight: 100;
+    }
+    
+    .comunidad hr{
+        margin-top: 5px;
+    }
+    
+    .comunidad ul{
+        margin: 1em;
+    }
+    
+    .comunidad ul li{
+        list-style: inside;
+        margin-top: 10px;
+    }
+    
+    .comunidad .loca{
+        margin: 1em 1em 0;
+    }
+    
+    .comunidad .des{
+        margin: 0 2em 0;
+    }
+    
+    .footer .linea{
+        margin-top: 1em;
+    }
+    
+    .dere {
+        color: var(--blanco);
+        text-align: center;
+    }
+    #comunidad{
+        display: none;
+    }
+
+    .conte{
+        justify-content: space-around;
+    }
+
+    #comunidad{
+        display: none;
+    }
+
+}
+
+/* Responsive de movile */
+
+@media only screen and ( max-width: 426px){
+
+    main{
+        width: 100%;
+        height: 70em;
+        padding: 0;
+        align-items: center;
+    }
+
+    main .conten{
+        width: 90%;
+        height: 30em;
+    }
+
+    .conten .desa{
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        height: 50%;
+    }
+
+    .desa .card{
+        width: 100%;
+        height: 40%;
+    }
+
+    .header .op{
+        width: 30%;
+        justify-content: space-around;
+    }
+
+    .op .mo{
+        width: 90%;
+    }
+
+    .header .mes{
+        font-size: 0.9em;
+    }
+
+    .header .op .hoy{
+        display: none;
+    }
+    
+    .crono{
+        width: 90%;
+        height: 30em;
+    }
+
+    .msd{
+        display: none;
+    }
+
+    .semana .per{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .semana {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    .semana .lm{
+        width: 100%;
+        height: auto;
+    }
+
+    .semana #viernes{
+        width: 50%;
+        height: 8em;
+    }
+
+    .semana .lm .lunes{
+        width: 50%;
+        height: 8em;
+    }
+    footer{
+        height: 27em;
+    }
+
+    .conte{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #comunidad{
+        display: none;
+    }
+}

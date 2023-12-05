@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d42fb48da4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../../static/css/styleAttendance.css">
+    <link rel="ICON" href="../../../static/img/logonaciones.png">
+    <title>Colegio Naciones Unidas - Asistencia</title>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="title-logo">
+                <img src="../../../static/img/logonaciones.png" alt="Logo-Empresa">
+                <h1 class="title">Colegio Naciones Unidas I.E.D</h1>
+            </div>
+
+            <button id="abrir" class="abrirMenu"><i class="fa-solid fa-bars"></i></button>
+            <nav id="menu" class="nav-bar">
+                <button id="cerrar" class="cerrarMenu"><i class="fa-solid fa-x"></i></button>
+                <ul class="nav">
+                    <li><a href="indexTeacher.html" class="op">Inicio</a></li>
+                    <li><a href="attendance.html" class="op1">Asistencia</a></li>
+                    <li><a href="schedule.html" class="op2">Cronograma</a></li>
+                    <li><a href="grades.html" class="op3">Notas</a></li>
+
+                    <li class="menu-item">Mi cuenta<i class="fa-solid fa-user"></i>
+                        <ul class="sub-menu">
+                            <li><a href="profile.html">Mi Perfil</a></li>
+                            <li><a href="">Cerrar <i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+                        </ul>
+                    </li>
+
+                    <li class="obse"><a href="profile.html">Mi Perfil</a></li>
+                    <li id="obse" class="obse"><a href="#">Salir <i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="title-img">
+            <h1>
+                Asistencia por curso
+            </h1>
+        </div>
+
+        <div class="curso">
+            <h1 class="sc">
+                Sus cursos
+            </h1>
+
+            <div class="cursos">
+            
+                <div id="abrirModal" class="course">
+                    <div class="name">
+                        <h2>Curso</h2>
+                        <h2>601</h2>
+                    </div>
+            
+                    <div class="dire">
+                        <h3>Director de curso:</h3>
+                        <h3>Lorena Caro</h3>
+                    </div>
+            
+                    <div class="total">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <h3>25</h3>
+                    </div>
+                </div>
+            
+                <div class="course">
+                    <div class="name">
+                        <h2>Curso</h2>
+                        <h2>601</h2>
+                    </div>
+            
+                    <div class="dire">
+                        <h3>Director de curso:</h3>
+                        <h3>Lorena Caro</h3>
+                    </div>
+            
+                    <div class="total">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <h3>25</h3>
+                    </div>
+                </div>
+            
+            
+            
+                <div class="course">
+                    <div class="name">
+                        <h2>Curso</h2>
+                        <h2>601</h2>
+                    </div>
+            
+                    <div class="dire">
+                        <h3>Director de curso:</h3>
+                        <h3>Lorena Caro</h3>
+                    </div>
+            
+                    <div class="total">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <h3>25</h3>
+                    </div>
+                </div>
+            
+            
+            
+                <div class="course">
+                    <div class="name">
+                        <h2>Curso</h2>
+                        <h2>601</h2>
+                    </div>
+            
+                    <div class="dire">
+                        <h3>Director de curso:</h3>
+                        <h3>Lorena Caro</h3>
+                    </div>
+            
+                    <div class="total">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <h3>25</h3>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+
+        <div id="modal" class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar">&times;</span>
+                <h2>Lista de Estudiantes</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Nombres</th>
+                            <th>Apellidos</th>
+                            <th>Asistencia</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <link>1</link>
+                            </td>
+                            <td>
+                                <link>Jaider Steven</link>
+                            </td>
+                            <td>
+                                <link>Quimbaya Mendez</link>
+                            </td>
+                            <td><input class="input" type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <link>2</link>
+                            </td>
+                            <td>
+                                <link>Johan David</link>
+                            </td>
+                            <td>
+                                <link>Rodriguez Velazco</link>
+                            </td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <link>2</link>
+                            </td>
+                            <td>
+                                <link>Johan David</link>
+                            </td>
+                            <td>
+                                <link>Rodriguez Velazco</link>
+                            </td>
+                            <td><input type="checkbox"></td>
+                        </tr>
+                        
+
+                        <!-- Agrega aquí las filas de la tabla con los estudiantes -->
+                    </tbody>
+                </table>
+                <button id="guardarAsistencia">Guardar Asistencia</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="conte">
+                <div class="comunidad">
+                    <h2>
+                        Sobre nosotros
+                    </h2>
+    
+                    <hr>
+    
+                    <ul>
+                        <li>
+                            Horizonte institucional
+                        </li>
+    
+                        <li>
+                            Ubicacion
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="comunidad" id="comunidad">
+                    <h2>
+                        Comunidad
+                    </h2>
+    
+                    <hr>
+    
+                    <ul>
+                        <li>
+                            Estudiantes 
+                        </li>
+    
+                        <li>
+                            Docentes
+                        </li>
+    
+                        <li>
+                            Talleres preparativos
+                        </li>
+    
+                        <li>
+                            Rendicion de cuentas
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="comunidad" >
+                    <h2>
+                        Contactanos
+                    </h2>
+    
+                    <hr>
+    
+                    <p class="loca">Localidad:</p>
+                    <p class="des">10 - Engativa</p>
+    
+                    <p class="loca">Sede A:</p>
+                    <p class="des">Dirección: CL 73 BIS 68 G - 27</p>
+                    <p class="des">Telefono: 2502506</p>
+    
+                    <p class="loca">Sede B:</p>
+                    <p class="des">Dirección: Cl. 73A #69j-10</p>
+                    <p class="des">Teléfono: 12507823</p>
+                </div> 
+            </div>
+            
+            <hr class="linea">
+            <p class="dere">
+                Todos los derechos reservados © 2023 RQC  EDUCATIONAL INFORMATION 
+            </p>
+        </div>
+    </footer>
+    <script src="../../../static/js/Script.js"></script>
+</body>
+</html>

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d42fb48da4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../../static/css/styleStudentCrono.css">
+    <link rel="ICON" href="../../../static/img/logonaciones.png">
+    <title>Colegio Naciones Unidas I.E.D - Cronograma</title>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="title-logo">
+                <img src="../../../static/img/logonaciones.png" alt="Logo-Empresa">
+                <h1 class="title">Colegio Naciones Unidas I.E.D</h1>
+            </div>
+
+            <button id="abrir" class="abrirMenu"><i class="fa-solid fa-bars"></i></button>
+            <nav id="menu" class="nav-bar">
+                <button id="cerrar" class="cerrarMenu"><i class="fa-solid fa-x"></i></button>
+                <ul class="nav">
+                    <li><a href="IndexStudent.html" class="op">Inicio</a></li>
+                    <li><a href="StudentShe.html" class="op2">Cronograma</a></li>
+                    <li><a href="StudentGrades.html" class="op3">Mis Notas</a></li>
+
+                    <li class="menu-item">Mi cuenta<i class="fa-solid fa-user"></i>
+                        <ul class="sub-menu">
+                            <li id="abrirModal">Mi Perfil</a></li>
+                            <li><a href="">Cerrar <i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+                        </ul>
+                    </li>
+
+                    <li id="abrirModal" class="obse">Mi Perfil</li>
+                    <li id="obse" class="obse"><a href="#">Salir <i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="modal" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar">&times;</span>
+            <h2>Mi Perfil</h2>
+            <form action="">
+                <h4 class="title">Informacion para Actualizar</h4>
+                <div class="info1">
+                    <div class="segun">
+                        <h4>Primer Nombre</h4>
+                        <input type="text" name="primer nombre" placeholder="Primer Nombre">
+                    </div>
+
+                    <div class="segun">
+                        <h4>Segundo Nombre</h4>
+                        <input type="text" name="segundo nombre" placeholder="Segundo Nombre">
+                    </div>
+
+                    <div class="segun">
+                        <h4>Primer Apellido</h4>
+                        <input type="text" name="primer apellido" placeholder="Primer Apellido">
+                    </div>
+
+                    <div class="segun">
+                        <h4>Segundo Apellido</h4>
+                        <input type="text" name="segundo apellido" placeholder="Segundo Apellido">
+                    </div>
+
+                    <div class="segun">
+                        <h4>Genero</h4>
+                        <input type="text" name="genero" placeholder="Genero">
+                    </div>
+
+                    <div class="segun">
+                        <h4>Depto. de Nacimiento</h4>
+                        <input type="text" name="nacimiento" placeholder="Depto. de Nacimiento">
+                    </div>
+
+                    <div class="segun">
+                        <h4>Municipio de Nacimiento</h4>
+                        <input type="text" name="municipioNaci" placeholder="Municipio de Nacimiento">
+                    </div>
+
+                    <div class="segun">
+                        <h4>Fecha de Nacimiento</h4>
+                        <input type="date" name="FechaNaci">
+                    </div>
+
+                    <div class="segun">
+                        <h4>Edad</h4>
+                        <input type="number" name="edad" placeholder="Edad">
+                    </div>
+
+                    <div class="segun">
+                        <h4>Tipo de documento</h4>
+                        <input type="text" name="Seleccionar" placeholder="Seleccionar">
+                    </div>
+
+                    <div class="segun">
+                        <h4>Numero documento</h4>
+                        <input type="number" name="numberDocu" placeholder="Numero de documento">
+                    </div>
+
+                    <div class="segun">
+                        <h4>Localidad</h4>
+                        <input type="text" name="Localidad" placeholder="Seleccionar">
+                    </div>
+
+                    <div class="segun">
+                        <h4>Barrio</h4>
+                        <input type="text" name="barrio" placeholder="Barrio">
+                    </div>
+
+                    <div class="segun">
+                        <h4>Estrato</h4>
+                        <input type="number" name="estrato" placeholder="Estrato">
+                    </div>
+
+                    <div class="segun">
+                        <h4>Direccion Residencia</h4>
+                        <input type="text" name="direccion" placeholder="Direccion Residencia">
+                    </div>
+
+                    <div class="segun">
+                        <h4>Numero Fijo</h4>
+                        <input type="number" name="numeroF" placeholder="Numero Fijo">
+                    </div>
+
+                    <div class="segun">
+                        <h4>Numero Celular</h4>
+                        <input type="number" name="numeroC" placeholder="Numero Celular">
+                    </div>
+
+                    <div class="segun">
+                        <h4>Correo Electronico</h4>
+                        <input type="text" name="Correo" placeholder="Correo Electronico">
+                    </div>
+
+                    <div class="segun">
+                        <h4>Contraseña</h4>
+                        <input type="text" name="contra" placeholder="Contraseña Predeterminada">
+                    </div>
+
+                    <div class="segun">
+                        <h4>Confirmar Contraseña</h4>
+                        <input type="text" name="contra" placeholder="Contraseña Predeterminada">
+                    </div>
+                </div>
+    
+                <div class="buttom">
+                    <button>Actualizar Docente</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <main>
+        <div class="title-img">
+            <h1>
+                Mi cronograma 
+            </h1>
+        </div>
+    
+        <div class="container">
+            <div class="left">
+                <div class="calendar">
+                    <div class="month">
+                        <i class="fas fa-angle-left prev"></i>
+                        <div class="date">Diciembre 2023</div>
+                        <i class="fas fa-angle-right next"></i>
+                    </div>
+                    <div class="weekdays">
+                        <div>Dom</div>
+                        <div>Lun</div>
+                        <div>Mar</div>
+                        <div>Mie</div>
+                        <div>Jue</div>
+                        <div>Vie</div>
+                        <div>Saba</div>
+                    </div>
+                    <div class="days"></div>
+                    <div class="goto-today">
+                        <div class="goto">
+                            <input type="text" placeholder="mm/yyyy" class="date-input" />
+                            <button class="goto-btn">Go</button>
+                        </div>
+                        <button class="today-btn">Hoy</button>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="today-date">
+                    <div class="event-day">Mie</div>
+                    <div class="event-date">12th Noviembre 2023</div>
+                </div>
+                <div class="events"></div>
+                <div class="add-event-wrapper">
+                    <div class="add-event-header">
+                        <div class="title">Agregar Evento</div>
+                        <i class="fas fa-times close"></i>
+                    </div>
+                    <div class="add-event-body">
+                        <div class="add-event-input">
+                            <input type="text" placeholder="Titulo de evento" class="event-name" />
+                        </div>
+                        <div class="add-event-input">
+                            <input type="text" placeholder="Hora del evento desde" class="event-time-from" />
+                        </div>
+                        <div class="add-event-input">
+                            <input type="text" placeholder="Hora del evento hasta" class="event-time-to" />
+                        </div>
+                    </div>
+                    <div class="add-event-footer">
+                        <button class="add-event-btn">Agregar Evento</button>
+                    </div>
+                </div>
+            </div>
+            <button class="add-event">
+                <i class="fas fa-plus"></i>
+            </button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="conte">
+                <div class="comunidad">
+                    <h2>
+                        Sobre nosotros
+                    </h2>
+    
+                    <hr>
+    
+                    <ul>
+                        <li>
+                            Horizonte institucional
+                        </li>
+    
+                        <li>
+                            Ubicacion
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="comunidad" id="comunidad">
+                    <h2>
+                        Comunidad
+                    </h2>
+    
+                    <hr>
+    
+                    <ul>
+                        <li>
+                            Estudiantes 
+                        </li>
+    
+                        <li>
+                            Docentes
+                        </li>
+    
+                        <li>
+                            Talleres preparativos
+                        </li>
+    
+                        <li>
+                            Rendicion de cuentas
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="comunidad" >
+                    <h2>
+                        Contactanos
+                    </h2>
+    
+                    <hr>
+    
+                    <p class="loca">Localidad:</p>
+                    <p class="des">10 - Engativa</p>
+    
+                    <p class="loca">Sede A:</p>
+                    <p class="des">Dirección: CL 73 BIS 68 G - 27</p>
+                    <p class="des">Telefono: 2502506</p>
+    
+                    <p class="loca">Sede B:</p>
+                    <p class="des">Dirección: Cl. 73A #69j-10</p>
+                    <p class="des">Teléfono: 12507823</p>
+                </div> 
+            </div>
+            
+            <hr class="linea">
+            <p class="dere">
+                Todos los derechos reservados © 2023 RQC  EDUCATIONAL INFORMATION 
+            </p>
+        </div>
+    </footer>
+    
+    <script src="../../../static/js/scroll.js"></script>
+    <script>
+
+        const navegacion = document.querySelector("#menu");
+        const abrir = document.querySelector("#abrir");
+        const cerrar = document.querySelector("#cerrar");
+    
+        abrir.addEventListener("click", () =>{
+            navegacion.classList.add("visible");
+        });
+    
+        cerrar.addEventListener("click", () =>{
+            navegacion.classList.remove("visible");
+        });
+    
+        document.addEventListener("DOMContentLoaded", function () {
+            var header = document.querySelector("header");
+            // Manejar el evento de scroll
+            window.addEventListener("scroll", function () {
+                if (window.scrollY > 10) {
+                    // Si se ha desplazado más de 50 píxeles, aplicar fondo sólido
+                    header.classList.add("scrolled");
+                } else {
+                    // Si no, aplicar fondo transparente
+                    header.classList.remove("scrolled");
+                }
+            });
+        });
+    
+        document.addEventListener("DOMContentLoaded", function () {
+            const elements = document.querySelectorAll(".type-animation");
+    
+            elements.forEach((element) => {
+                const text = element.textContent;
+                element.innerHTML = "";
+    
+                for (let i = 0; i < text.length; i++) {
+                    const span = document.createElement("span");
+                    span.textContent = text[i];
+                    span.style.animationDelay = `${i * 0.1}s`;
+                    element.appendChild(span);
+                }
+    
+                element.classList.add("reveal");
+            });
+        });
+    
+      
+    
+        // Obtener eventos desde el almacenamiento local al cargar la página
+        let eventsArr = getEvents();
+    
+        
+    
+        function saveEvents() {
+            // Guardar eventos en el almacenamiento local
+            localStorage.setItem("events", JSON.stringify(eventsArr));
+    
+            // Redirigir a la vista indexTeacher.html después de guardar eventos
+            window.location.href = "indexTeacher.html";
+        }
+    
+    
+        function getEvents() {
+            // Obtener eventos desde el almacenamiento local
+            return JSON.parse(localStorage.getItem("events")) || [];
+        }
+    
+        
+    </script>
+</body>
+</html>

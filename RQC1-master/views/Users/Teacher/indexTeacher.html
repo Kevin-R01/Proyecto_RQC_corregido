@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d42fb48da4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../../static/css/styleIndexTea.css">
+    <link rel="ICON" href="../../../static/img/logonaciones.png">
+    <title>Colegio Naciones Unidas </title>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="title-logo">
+                <img src="../../../static/img/logonaciones.png" alt="Logo-Empresa">
+                <h1 class="title">Colegio Naciones Unidas I.E.D</h1>
+            </div>
+
+            <button id="abrir" class="abrirMenu"><i class="fa-solid fa-bars"></i></button>
+            <nav id="menu" class="nav-bar">
+                <button id="cerrar" class="cerrarMenu"><i class="fa-solid fa-x"></i></button>
+                <ul class="nav">
+                    <li><a href="indexTeacher.html" class="op">Inicio</a></li>
+                    <li><a href="attendance.html" class="op1">Asistencia</a></li>
+                    <li><a href="schedule.html" class="op2">Cronograma</a></li>
+                    <li><a href="grades.html" class="op3">Notas</a></li>
+
+                    <li class="menu-item">Mi cuenta<i class="fa-solid fa-user"></i>
+                        <ul class="sub-menu">
+                            <li><a href="profile.html">Mi Perfil</a></li>
+                            <li><a href="">Cerrar <i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+                        </ul>
+                    </li>
+
+                    <li class="obse"><a href="profile.html">Mi Perfil</a></li>
+                    <li id="obse" class="obse"><a href="#">Salir <i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="title-img">
+            <h1>
+                Bienvenido Uldarico Hernandez
+            </h1>
+        </div>
+
+        <div class="cronograma">
+            <h1 class="cronoEsta">
+                Cronograma de esta semana
+            </h1>
+
+            <div class="crono">
+                <div class="header">
+                    <h1>
+                        Agosto 2023
+                    </h1>
+                </div>
+
+                <div class="semana">
+                    <div class="lm">
+                        <h2 class="ti">
+                            Lunes
+                        </h2>
+                        <div class="mensaje">
+
+                        </div>
+                    </div>
+
+                    <div class="lm">
+                        <h2 class="ti">
+                            Martes
+                        </h2>
+                        <div class="mensaje">
+                            
+                        </div>
+                    </div>
+
+                    <div class="lm">
+                        <h2 class="ti">
+                            Miercoles
+                        </h2>
+                        <div class="mensaje">
+                            
+                        </div>
+                    </div>
+
+                    <div class="lm">
+                        <h2 class="ti">
+                            Jueves
+                        </h2>
+                        <div class="mensaje">
+
+                        </div>
+                    </div>
+
+                    <div class="lm">
+                        <h2 class="ti">
+                            Viernes
+                        </h2>
+                        <div class="mensaje">
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div> 
+    </main>
+    
+    <footer>
+        <div class="footer">
+            <div class="conte">
+                <div class="comunidad">
+                    <h2>
+                        Sobre nosotros
+                    </h2>
+    
+                    <hr>
+    
+                    <ul>
+                        <li>
+                            Horizonte institucional
+                        </li>
+    
+                        <li>
+                            Ubicacion
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="comunidad" id="comunidad">
+                    <h2>
+                        Comunidad
+                    </h2>
+    
+                    <hr>
+    
+                    <ul>
+                        <li>
+                            Estudiantes 
+                        </li>
+    
+                        <li>
+                            Docentes
+                        </li>
+    
+                        <li>
+                            Talleres preparativos
+                        </li>
+    
+                        <li>
+                            Rendicion de cuentas
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="comunidad" >
+                    <h2>
+                        Contactanos
+                    </h2>
+    
+                    <hr>
+    
+                    <p class="loca">Localidad:</p>
+                    <p class="des">10 - Engativa</p>
+    
+                    <p class="loca">Sede A:</p>
+                    <p class="des">Dirección: CL 73 BIS 68 G - 27</p>
+                    <p class="des">Telefono: 2502506</p>
+    
+                    <p class="loca">Sede B:</p>
+                    <p class="des">Dirección: Cl. 73A #69j-10</p>
+                    <p class="des">Teléfono: 12507823</p>
+                </div> 
+            </div>
+            
+            <hr class="linea">
+            <p class="dere">
+                Todos los derechos reservados © 2023 RQC  EDUCATIONAL INFORMATION 
+            </p>
+        </div>
+    </footer>
+
+    <script src="../../../static/js/Script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+         const navegacion = document.querySelector("#menu");
+         const abrir = document.querySelector("#abrir");
+         const cerrar = document.querySelector("#cerrar");
+ 
+         abrir.addEventListener("click", () => {
+             navegacion.classList.add("visible");
+         });
+ 
+         cerrar.addEventListener("click", () => {
+             navegacion.classList.remove("visible");
+         });
+         const addEventButton = document.querySelector(".add-event-btn");
+    addEventButton.addEventListener("click", function () {
+        let eventsArr = getEvents();
+        // Obtener información del nuevo evento desde la interfaz
+        const eventName = document.querySelector(".event-name").value;
+        const eventTimeFrom = document.querySelector(".event-time-from").value;
+        const eventTimeTo = document.querySelector(".event-time-to").value;
+
+        // Crear un objeto de evento
+        const newEvent = {
+            title: eventName,
+            timeFrom: eventTimeFrom,
+            timeTo: eventTimeTo,
+            // Agregar más propiedades según sea necesario
+        };
+
+        // Agregar el nuevo evento al arreglo
+        eventsArr.push(newEvent);
+
+        // Mostrar eventos actualizados en el calendario
+        showEventsInCalendar(eventsArr);
+
+        // Guardar eventos en el almacenamiento local
+        saveEvents();
+         // Obtener eventos desde el almacenamiento local al cargar la página
+         
+         showEventsInCalendar(eventsArr);
+         // Inicializar el calendario y mostrar eventos
+         initCalendar();
+         showEvents();
+ 
+         
+     })});
+
+     function showEventsInCalendar(events) {
+    // Limpiar los días del calendario antes de mostrar eventos
+    const daysContainer = document.querySelector('.days');
+    daysContainer.innerHTML = '';
+
+    // Obtener la fecha actual
+    const currentDate = new Date();
+    const currentMonth = currentDate.getMonth();
+    const currentYear = currentDate.getFullYear();
+
+    // Obtener el primer día del mes actual
+    const firstDayOfMonth = new Date(currentYear, currentMonth, 1);
+    const startingDay = firstDayOfMonth.getDay();
+
+    // Obtener el último día del mes actual
+    const lastDayOfMonth = new Date(currentYear, currentMonth + 1, 0);
+    const totalDays = lastDayOfMonth.getDate();
+
+    // Crear días del mes en el calendario
+    for (let i = 0; i < startingDay; i++) {
+        // Días en blanco antes del primer día del mes
+        const dayElement = document.createElement('div');
+        dayElement.classList.add('blank');
+        daysContainer.appendChild(dayElement);
+    }
+
+    for (let day = 1; day <= totalDays; day++) {
+        // Crear un elemento para cada día del mes
+        const dayElement = document.createElement('div');
+        dayElement.classList.add('day');
+        dayElement.textContent = day;
+
+        // Comprobar si hay eventos para este día
+        const eventsForDay = events.filter(event => {
+            const eventDate = new Date(event.date);
+            return eventDate.getDate() === day && eventDate.getMonth() === currentMonth && eventDate.getFullYear() === currentYear;
+        });
+
+        // Agregar eventos al día si los hay
+        if (eventsForDay.length > 0) {
+            const eventsContainer = document.createElement('div');
+            eventsContainer.classList.add('events-container');
+
+            eventsForDay.forEach(event => {
+                const eventElement = document.createElement('div');
+                eventElement.classList.add('event');
+                eventElement.textContent = event.title; // Ajusta esto según tus datos de evento
+                eventsContainer.appendChild(eventElement);
+            });
+
+            dayElement.appendChild(eventsContainer);
+        }
+
+        // Agregar el día al calendario
+        daysContainer.appendChild(dayElement);
+    }
+}
+
+     function initCalendar() {
+         
+ 
+         // Mostrar el mes actual en el calendario
+         const monthElement = document.querySelector('.header h1');
+    const currentDate = new Date();
+    monthElement.textContent = `${getMonthName(currentDate.getMonth())} ${currentDate.getFullYear()}`;
+ 
+        
+     }
+     function showEvents() {
+         // Obtener la semana actual
+         const currentDate = new Date();
+         const startOfWeek = new Date(currentDate);
+         startOfWeek.setDate(currentDate.getDate() - currentDate.getDay());
+ 
+         // Filtrar eventos para la semana actual
+         const eventsThisWeek = eventsArr.filter(event =>
+             new Date(event.date) >= startOfWeek
+             && new Date(event.date) < new Date(startOfWeek).setDate(startOfWeek.getDate() + 7)
+         );
+ 
+         // Mostrar eventos en la vista de cronograma
+         eventsThisWeek.forEach(event => {
+        const eventDate = new Date(event.date);
+        const dayIndex = (eventDate.getDay() + 6) % 7;
+        const dayContainer = document.querySelectorAll(".mensaje")[dayIndex];
+
+        const eventDiv = document.createElement("div");
+        eventDiv.textContent = `${event.title} - ${eventDate.getDate()}th ${getMonthName(eventDate.getMonth())} ${eventDate.getFullYear()}`;
+        dayContainer.appendChild(eventDiv);
+
+        fetch('https://ejemplo-api-eventos.com/events')
+        .then(response => response.json())
+        .then(data => {
+            // Filtrar eventos para la fecha actual
+            const eventsToday = data.filter(event =>
+                new Date(event.date).toDateString() === currentDate.toDateString()
+            );
+
+            // Mostrar eventos en la vista de cronograma
+            eventsToday.forEach(event => {
+                const eventDate = new Date(event.date);
+                const dayIndex = (eventDate.getDay() + 6) % 7;
+                const dayContainer = document.querySelectorAll(".mensaje")[dayIndex];
+
+                const eventDiv = document.createElement("div");
+                eventDiv.textContent = `${event.title} - ${eventDate.getDate()}th ${getMonthName(eventDate.getMonth())} ${eventDate.getFullYear()}`;
+                dayContainer.appendChild(eventDiv);
+            });
+        })
+    });
+ 
+         // Mostrar eventos en la vista de inicio
+         const eventContainer = document.querySelector(".event-container");
+         eventsThisWeek.forEach(event => {
+             const eventDate = new Date(event.date);
+             const eventDiv = document.createElement("div");
+             eventDiv.textContent = `${event.title} - ${eventDate.getDate()}th ${getMonthName(eventDate.getMonth())} ${eventDate.getFullYear()}`;
+             eventContainer.appendChild(eventDiv);
+         });
+     }
+ 
+ 
+     function getMonthName(month) {
+         const months = [
+             "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
+             "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
+         ];
+         return months[month];
+     }
+ 
+     function getEvents() {
+         // Obtener eventos desde el almacenamiento local
+         return JSON.parse(localStorage.getItem("events")) || [];
+     }
+     function saveEvents() {
+    localStorage.setItem("events", JSON.stringify(eventsArr));
+}
+
+ 
+         
+     
+             
+         </script>
+</body>
+</html>

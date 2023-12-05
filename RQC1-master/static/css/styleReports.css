@@ -1,0 +1,185 @@
+main{
+    width: 75%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+main{
+    width: 75%;
+    padding: 20px;
+}
+
+main .conte{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main .conte h3{
+    font-weight: 100;
+}
+
+main .conte .title{
+    width: 100%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 0px 10px;
+    background: var(--header);
+    color: var(--blanco);
+}
+
+main .conte .tresD{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.conte .tresD .course{
+    width:  30%;
+    height: 6.188em;
+    display: flex;
+    border-radius: 1em;
+    background:var(--header);
+    border: 1px solid var(--header);
+}
+
+.conte .tresD .course .cu{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1em 0px 0px 1em;
+    color: var(--blanco);
+    background: var(--header);
+}
+
+.conte .tresD .course .info{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: var(--blanco);
+}
+
+.conte .tresD .course .info .dire{
+    padding: 0px 0px 0px 10px;
+}
+.conte .tresD .course .info .but {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.conte .tresD .course .info .but button{
+    padding: 4px 15px ;
+    border-radius: 5px;
+    background: var(--button);
+    color: var(--blanco);
+    border: 0;
+}
+
+.conte .tresD .course .canti{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    border-radius: 0px 1em 1em 0px;
+    background: var(--header);
+    color: var(--blanco);
+}
+
+.conte .bu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.conte .bu button{
+    padding: 10px 10px;
+    border-radius: 0.5em;
+    background: var(--button);
+    color: var(--blanco);
+    border: 0;
+}
+
+
+
+/* responsive de portatil L */
+
+@media only screen and ( min-width: 1440px){
+
+}
+
+/* responsive de portatil */
+
+@media only screen and ( max-width: 1024px){
+
+    main{
+        width: 75%;
+        height: 70em;
+    }
+
+    .conte .tresD .course{
+        width: 40%;
+    }
+
+}
+
+/* responsive de tableta */
+
+@media only screen and ( max-width: 768px){
+    main{
+        width: 100%;
+        height: 70em;
+        padding: 1em 0px;
+    }
+    main .conte .title{
+        padding: 0px;
+        width: 100%;
+    }
+
+    main .conte .title h3{
+        margin: 0px  10px;
+    }
+
+    .conte .tresD .course{
+        width: 40%;
+    }
+}
+
+/* Responsive de movile */
+
+@media only screen and ( max-width: 426px){
+    main{
+        width: 100%;
+        height: 120em;
+        padding:  1em 0px;
+    }
+
+    main .conte .title{
+        padding: 0;
+        justify-content: center;
+        height: 3%;
+    }
+
+    main .conte .tresD{
+        height: 90%;
+    }
+    .conte .tresD .course{
+        width: 80%;
+    }
+
+    .conte .bu{
+        width: 80%;
+    }
+}

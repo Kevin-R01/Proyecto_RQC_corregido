@@ -1,0 +1,204 @@
+main{
+    width: 75%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.busq{
+    height: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.barra_busq{
+    width: 25.625em;
+    height:  2.053em;
+    display: flex;
+    border: 1px solid var(--gris);
+    border-radius: 10px;
+}
+
+.barra_busq .icon{
+    width: 2.188em;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 0px 0px 10px;
+    background: var(--gris);
+}
+.barra_busq .icon i{
+    font-size: 1.2em;
+}
+.barra_busq .inpu{
+    width: 100%;
+    height: 100%;
+}
+.barra_busq .inpu input{
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 10px 10px 0px;
+    border: 0;
+}
+
+.busq .linea{
+    width: 100%;
+    height: 2px;
+    background: var(--header);
+}
+
+main .conte{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conte .dosD{
+    width: 54.563em;
+    height: 6.188em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.conte .dosD a{
+    color: var(--header);
+}
+
+.conte .dosD .docente{
+    width: 25.5em;
+    height: 100%;
+    display: flex;
+    border-radius: 19px;
+    border: 1px solid var(--gris);
+}
+
+.conte .dosD  .docente .fot{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 19px 0px 0px 19px;
+    background: var(--header);
+}
+
+.conte .dosD  .docente .fot img{
+    width: 5em;
+    height: 4.688em;
+    border-radius: 5em;
+}
+.docente .info{
+    width: 70%;
+    height: 100%;
+    padding: 0px 0px 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.docente .info h3{
+    font-weight: 100;
+}
+
+.conte button{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    background: var(--button);
+    border: 0;
+    border-radius: 8px;
+    color: var(--blanco);
+}
+
+
+
+/* responsive de portatil L */
+
+@media only screen and ( min-width: 1440px){
+
+}
+
+/* responsive de portatil */
+
+@media only screen and ( max-width: 1024px){
+    main .conte{
+    }
+
+    .conte .dosD{
+        width: 95%;
+    }
+
+    .conte .dosD .docente{
+        width: 20em;
+    }
+}
+
+/* responsive de tableta */
+
+@media only screen and ( max-width: 768px){
+    main{
+        width: 100%;
+        height: 45em;
+        padding:  1em 0px;
+    }
+
+    .busq{
+        width: 95%;
+    }
+
+    main .conte{
+        width: 100%;
+        height: 40em;
+    }
+    
+    .conte .dosD{
+        width: 95%;
+    }
+
+
+    .conte .dosD .docente{
+        width: 22em;
+    }
+
+    
+}
+
+/* Responsive de movile */
+
+@media only screen and ( max-width: 426px){
+    main{
+        height: 70em;
+    }
+    .busq{
+        width: 90%;
+        height: 6%;
+    }
+
+    .barra_busq{
+        width: 100%;
+    }
+
+    main .conte{
+        width: 100%;
+        height: 70em;
+    }
+
+    .conte .dosD{
+        width: 95%;
+        flex-direction: column;
+        height: 13em;
+    }
+
+    .conte .dosD .docente{
+        width: 100%;
+    }
+
+}
